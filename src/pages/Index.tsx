@@ -1,12 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import GlassNavbar from '@/components/GlassNavbar';
+import HeroSection from '@/components/HeroSection';
+import BentoGrid from '@/components/BentoGrid';
+import Footer from '@/components/Footer';
+import SparklesBackground from '@/components/SparklesBackground';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-void relative overflow-x-hidden">
+      {/* Particle Background */}
+      <SparklesBackground particleCount={40} />
+      
+      {/* Navigation */}
+      <GlassNavbar />
+      
+      {/* Hero Section with Globe */}
+      <HeroSection />
+      
+      {/* Features Bento Grid */}
+      <BentoGrid />
+      
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
